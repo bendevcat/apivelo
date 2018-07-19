@@ -8,8 +8,8 @@ var slideshow = {
     slidePics:      [],
     position:       0,
 
-    //On créer la structure du Slideshow pour l'afficher ensuite.
-    display: function () {
+    //Construction de la structure du Slideshow.
+    init: function () {
 
         //Création de la div gauche.
         var prevSlide = this.prevSlide;
@@ -25,7 +25,6 @@ var slideshow = {
             innerSlideshow.id = "innerSlideshow";
         document.getElementById("slideshow").appendChild(innerSlideshow);
 
-
         //Création de la div droite.
         var nextSlide = this.nextSlide;
             nextSlide.id = "nextSlide";
@@ -35,31 +34,15 @@ var slideshow = {
             rightArrow.setAttribute("class", "fas fa-chevron-circle-right");
         document.getElementById("nextSlide").appendChild(rightArrow);
 
-        //Style CSS
-        innerSlideshow.style.width     = "80%";
-        prevSlide.style.minWidth       = "10%";
-        nextSlide.style.minWidth       = "10%";
-        prevSlide.style.display        = "flex";
-        nextSlide.style.display        = "flex";
-        prevSlide.style.display        = "-webkit-flex";
-        nextSlide.style.display        = "-webkit-flex";
-        prevSlide.style.justifyContent = "center";
-        nextSlide.style.justifyContent = "center";
-        prevSlide.style.alignItems     = "center";
-        nextSlide.style.alignItems     = "center";
-        prevSlide.style.fontSize       = "5em";
-        nextSlide.style.fontSize       = "5em";
-        prevSlide.style.color          = "#c1d7b5";
-        nextSlide.style.color          = "#c1d7b5";
-        prevSlide.style.textShadow     = "3px 5px #a8be9c";
-        nextSlide.style.textShadow     = "3px 5px #a8be9c";
-
         //Affichage de la première image au chargement de la page.
-        var imgElt             = document.createElement("img");
-            imgElt.id          = "innerPic";
-            imgElt.src         = "img/01.png";
-            imgElt.style.width = "100%";
-        this.innerSlideshow.appendChild(imgElt);
+        var innerPic             = document.createElement("img");
+            innerPic.id          = "innerPic";
+            innerPic.src         = this.slidePics[0];
+            innerPic.style.width = "100%";
+        this.innerSlideshow.appendChild(innerPic);
+
+        //Appel de la fonction clickEvent
+        this.clickEvent();
     },
 
 
@@ -109,18 +92,4 @@ var slideshow = {
         });
     }
 };
-
-//Je remplis le tableau de mon objet slideshow avec le chemin des images à afficher
-slideshow.slidePics = [
-    "img/01.png",
-    "img/02.png",
-    "img/03.png",
-    "img/04.png",
-    "img/05.png"
-];
-
-//J'appelle les méthodes display et clickEvent de l'objet slideshow
-slideshow.display();
-slideshow.clickEvent();
-
 
