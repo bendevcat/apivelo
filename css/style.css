@@ -38,21 +38,21 @@ h3 {
     overflow: hidden;
 }
 
-/*#innerSlideshow img {*/
-    /*max-width: 100%;*/
+#innerSlideshow img {
+    max-width: 100%;
 
-/*}*/
+}
 
-/*#prevSlide,*/
-/*#nextSlide {*/
-    /*display: -webkit-flex;*/
-    /*justify-content: center;*/
-    /*align-items: center;*/
-    /*width: 10%;*/
-    /*font-size: 5em;*/
-    /*color: #c1d7b5;*/
-    /*text-shadow: 3px 5px #a8be9c;*/
-/*}*/
+#prevSlide,
+#nextSlide {
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    font-size: 5em;
+    color: #c1d7b5;
+    text-shadow: 3px 5px #a8be9c;
+}
 
 #prevSlide i:hover,
 #nextSlide i:hover {
