@@ -4,21 +4,20 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
-div {
-    /*border: 1px solid;*/
-}
-
-footer {
-    /*border: 1px solid;*/
-}
-
 /* HEADER - SLIDESHOW */
 header {
-}
 
+}
+hr {
+    height: 15px;
+    border: 0;
+    box-shadow: inset 0 -5px 20px -8px #CCC;
+    margin: 0;
+}
 h1,
 h2,
-h3 {
+h3,
+h4 {
     text-align: center;
     font-weight: 900;
     text-transform: uppercase;
@@ -32,19 +31,18 @@ h3 {
     min-height: 50vh;
 }
 
-#innerSlideshow {
+.innerSlideshow {
     width: 80%;
     height: auto;
     overflow: hidden;
 }
 
-#innerSlideshow img {
+.innerSlideshow img {
     max-width: 100%;
-
 }
 
-#prevSlide,
-#nextSlide {
+.prevSlide,
+.nextSlide {
     display: -webkit-flex;
     justify-content: center;
     align-items: center;
@@ -54,49 +52,58 @@ h3 {
     text-shadow: 3px 5px #a8be9c;
 }
 
-#prevSlide i:hover,
-#nextSlide i:hover {
+.prevSlide i:hover,
+.nextSlide i:hover {
     color: #c1d7b5;
     text-shadow: 1px 2px #a8be9c;
 }
 
-/* CONTAINER */
+/* MAP CONTAINER */
 div.container {
+    /*background-color: #eaffeb;*/
     display: flex;
     flex-direction: row;
-    margin: 3em;
+    padding: 5em 10em 3em 10em;
 }
 
-#displayMap {
-    width: 75%;
-    padding: 1em;
-}
-
-.maps-content {
-    border: 1px #ebebeb solid;
-    background-color: #d5ebc9;
-    border-radius: 5px;
-    /*box-shadow: 0 6px 6px 0 rgba(0,0,0,.26), 0 10px 20px 0 rgba(0,0,0,.19);*/
-    box-shadow: rgba(121, 121, 121, .35) 1px 10px 20px;
-}
-
+/* BLOCS PRINCIPAUX */
+/* ASIDE MENU */
 #displayInfos {
     width: 25%;
-    padding: 1em;
+    padding: 0 1em;
 }
 
-#infoStation,
+#displayInfos h2 {
+    border: 0;
+    border-radius: 5px 5px 0 0;
+    border-bottom: 3px solid #FFF;
+    background-color: #ffb32d;
+    min-width: 100%;
+    font-size: 1.3em;
+    font-weight: 900;
+    color: #FFF;
+    padding: 0.45em 0;
+}
+
+/* MAP */
+#displayMap {
+    width: 75%;
+    padding: 0 1em;
+}
+
+/* DIV Infos */
+#infosStation,
 #confirmBySignature,
 #infoBulle {
     height: 15em;
     margin-bottom: 3.5em;
-    border: 1px #ebebeb solid;
-    background-color: #d5ebc9;
+    border: 0;
+    background-color: #c1d7b5;
     border-radius: 5px;
     box-shadow: rgba(121, 121, 121, .35) 1px 10px 20px;
 }
 
-#infoStation {
+#infosStation {
 
 }
 
@@ -106,4 +113,13 @@ div.container {
 
 #infoBulle {
 
+}
+
+/* DIV Map */
+#myMap {
+    height: 50em;
+    border: 0;
+    background-color: #c1d7b5;
+    border-radius: 5px;
+    box-shadow: rgba(121, 121, 121, .35) 1px 10px 20px;
 }

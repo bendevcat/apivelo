@@ -8,6 +8,7 @@ myFirstSlideshow.slidePics = [
     "img/04.png",
     "img/05.png"
 ];
-
 myFirstSlideshow.init();
-// myFirstSlideshow.clickEvent();
+
+// DisplayMakers.JS
+displayMarkers.init();

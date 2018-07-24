@@ -5,11 +5,20 @@
         <title>LocaBike Lyon - Réservation de Vélo </title>
 
         <link rel="stylesheet" href="css/style.css" />
-        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <link rel="stylesheet" href="css/markers.css" />
+
+        <link href="https://fonts.googleapis.com/css?family=Raleway:400,900" rel="stylesheet">
+
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
               integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ"
               crossorigin="anonymous">
+
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css"
+              integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+              crossorigin=""/>
+        <script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js"
+                integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q=="
+                crossorigin=""></script>
     </head>
     <body>
 
@@ -22,33 +31,35 @@
 
         </header>
 
+        <hr />
+
         <div class="container">
 
             <aside id="displayInfos">
-                <div id="infoStation">
-                    <h2>INFO STATION</h2>
+                <div id="infosStation">
+                    <h2><i class="fas fa-info-circle"></i> Infos Station</h2>
                 </div>
 
 
                 <div id="confirmBySignature">
-                    <h2>SIGNATURE</h2>
+                    <h2><i class="fas fa-file-signature"></i> Signature</h2>
                 </div>
 
 
                 <div id="infoBulle">
-                    <h2>INFO BULLE</h2>
+                    <h2><i class="fas fa-calendar-check"></i> Infos Réservation</h2>
                 </div>
             </aside>
 
             <div id="displayMap">
-                <div class="maps-content">
-                    <h2>MAP</h2>
-                </div>
+                <div id="myMap"></div>
             </div>
 
         </div>
-
+        <script type="text/javascript" src="js/ajax.js"></script>
         <script type="text/javascript" src="js/slideshow.js"></script>
+        <script type="text/javascript" src="js/displayMap.js"></script>
+        <script type="text/javascript" src="js/displayMarkers.js"></script>
         <script type="text/javascript" src="js/app.js"></script>
     </body>
 </html>

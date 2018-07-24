@@ -1,0 +1,64 @@
+/* Taille de la Popup */
+.leaflet-popup-content {
+    min-width: 26em;
+}
+
+.infoStation > h3 {
+    border: 0;
+    background-color: #ffb32d;
+    min-width: 100%;
+    font-size: 1.3em;
+    color: #FFF;
+    padding: 0.2em 0;
+}
+
+.nameStation > h3 {
+    font-size: 1.5em;
+}
+
+.addressStation,
+.availableBikesStation,
+.availableBikeStandsStation {
+    font-size: 1.15em;
+}
+
+span.createButton {
+    display: block;
+    width: 20em;
+    margin: auto;
+}
+.createButton > button {
+    min-width: 100%;
+    margin: 1.1em 0;
+    padding: 0.8em 0;
+    border: 0;
+    color: #FFF;
+    font-size: 1.4em;
+    font-weight: 800;
+}
+/* Couleur du Status des stations */
+span.OPEN {
+    color: green;
+    font-weight: 900;
+    text-align: center;
+}
+span.CLOSED {
+    color: red;
+    font-weight: 900;
+    text-align: center;
+}
+span.OPEN > h3,
+span.CLOSED > h3 {
+    font-size: 1.4em;
+}
+
+/* Couleur du bouton de réservation */
+#greenButton {
+    background-color: green;
+}
+#redButton {
+    background-color: red;
+}
+#orangeButton {
+    background-color: orange;
+}
