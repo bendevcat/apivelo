@@ -3,14 +3,15 @@
     min-width: 26em;
 }
 
-.infoStation > h3 {
+.titleStation > h3 {
     border: 0;
     background-color: #ffb32d;
     min-width: 100%;
     font-size: 1.3em;
     color: #FFF;
-    padding: 0.2em 0;
+    padding: 0.3em 0;
 }
+
 
 .nameStation > h3 {
     font-size: 1.5em;
@@ -22,9 +23,10 @@
     font-size: 1.15em;
 }
 
+/* Popup Button */
 span.createButton {
     display: block;
-    width: 20em;
+    max-width: 20em;
     margin: auto;
 }
 .createButton > button {
@@ -36,6 +38,7 @@ span.createButton {
     font-size: 1.4em;
     font-weight: 800;
 }
+
 /* Couleur du Status des stations */
 span.OPEN {
     color: green;
@@ -53,12 +56,12 @@ span.CLOSED > h3 {
 }
 
 /* Couleur du bouton de réservation */
-#greenButton {
+.greenButton {
     background-color: green;
 }
-#redButton {
+.redButton {
     background-color: red;
 }
-#orangeButton {
+.orangeButton {
     background-color: orange;
 }

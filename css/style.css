@@ -22,6 +22,9 @@ h4 {
     font-weight: 900;
     text-transform: uppercase;
 }
+h2 {
+    font-size: 1.6em;
+}
 
 #slideshow {
     display: flex;
@@ -60,17 +63,15 @@ h4 {
 
 /* MAP CONTAINER */
 div.container {
-    /*background-color: #eaffeb;*/
     display: flex;
     flex-direction: row;
-    padding: 5em 10em 3em 10em;
+    flex-wrap: nowrap;
+    padding: 5em 5em 3em 5em;
 }
 
-/* BLOCS PRINCIPAUX */
 /* ASIDE MENU */
 #displayInfos {
-    width: 25%;
-    padding: 0 1em;
+
 }
 
 #displayInfos h2 {
@@ -79,23 +80,37 @@ div.container {
     border-bottom: 3px solid #FFF;
     background-color: #ffb32d;
     min-width: 100%;
-    font-size: 1.3em;
+    font-size: 1.5em;
     font-weight: 900;
     color: #FFF;
     padding: 0.45em 0;
+    margin-bottom: 0;
 }
 
-/* MAP */
-#displayMap {
-    width: 75%;
-    padding: 0 1em;
+#contentInfos {
+    margin: 2em 1em 1em 1em;
+    padding: 1em 1em 2em 1em;
+    background-color: #FFF;
+    box-shadow: 0 0 20px rgba(121,121,121,.50);
+}
+
+/* DISPLAY ASIDE MENU */
+.active {
+    display: block;
+}
+
+.hide {
+    display: none;
 }
 
 /* DIV Infos */
 #infosStation,
 #confirmBySignature,
 #infoBulle {
-    height: 15em;
+    min-width: 24em;
+    max-width: 24em;
+    min-height: 15em;
+    margin-right: 2em;
     margin-bottom: 3.5em;
     border: 0;
     background-color: #c1d7b5;
@@ -104,7 +119,7 @@ div.container {
 }
 
 #infosStation {
-
+    padding-bottom: 1em;
 }
 
 #confirmBySignature {
@@ -115,9 +130,16 @@ div.container {
 
 }
 
-/* DIV Map */
+/* MAP */
+#displayMap {
+    min-height: 85vh;
+    min-width: 50em;
+    width: 100%;
+    padding: 0 1em;
+}
+
 #myMap {
-    height: 50em;
+    height: 100%;
     border: 0;
     background-color: #c1d7b5;
     border-radius: 5px;
